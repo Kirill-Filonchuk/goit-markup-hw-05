@@ -53,6 +53,7 @@ smartphone, envelope - #757575
   --card-set-gap: 30px;
   --social-fill-color: #afb1b8;
   --footer-social-fill-color: rgba(255, 255, 255, 0.1);
+  --practice-description-color: rgba(47, 48, 58, 0.8);
 }
 
 html {
@@ -403,6 +404,33 @@ button {
 
   margin-left: var(--card-set-gap); /* НОВОЕ*/
   margin-top: var(--card-set-gap); /* НОВОЕ*/
+}
+
+/* ======= Practice decoration title ======= */
+
+.practice-thumb {
+  position: relative;
+}
+
+.practice-description {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: var(--practice-description-color);
+
+  bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
 }
 
 /* каждому добавленные margin-right: 30px и margin-bottom: 30px;. Такой алгоритм не нарушает дизайн фона. */
