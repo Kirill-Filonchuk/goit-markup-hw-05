@@ -85,7 +85,6 @@ ol {
 img {
   display: block;
 
-  /* Совет доп вебинар 1 Репета */
   max-width: 100%;
   height: auto;
 }
@@ -94,7 +93,6 @@ button {
   cursor: pointer;
 }
 
-/* size of my container 1200 px =1700 + pading (15 + 15) */
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -233,7 +231,7 @@ button {
 }
 
 /* costomisation nav */
-.site-nav-item > .link {
+.site-nav-item {
   display: block;
   position: relative;
 }
@@ -265,10 +263,6 @@ button {
     url('../images/img-hero.jpg');
 
   margin: auto;
-
-  /* margin-left: auto;
-  margin-right:auto;
-  background-position: center; */
 }
 
 .hero {
@@ -314,6 +308,9 @@ button {
   margin-right: auto;
 
   border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -390,17 +387,6 @@ button {
   background-image: url('../images/astronaut.svg');
   background-size: 70px 70px;
 }
-/* Not good experience
-.particular-thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 120px;
-  margin-bottom: 30px;
-
-  background-color: var(--second-bg-color);
-} */
 
 /* ======= Practice ======= */
 .practice {
@@ -411,8 +397,8 @@ button {
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: calc(-1 * var(--card-set-gap)); /* НОВОЕ*/
-  margin-left: calc(-1 * var(--card-set-gap)); /* НОВОЕ*/
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 
 .practice-title {
@@ -426,10 +412,10 @@ button {
 }
 
 .practice-list-items {
-  flex-basis: calc(100% / 3 - var(--card-set-gap)); /* НОВОЕ*/
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
 
-  margin-left: var(--card-set-gap); /* НОВОЕ*/
-  margin-top: var(--card-set-gap); /* НОВОЕ*/
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 /* ======= Practice decoration title ======= */
@@ -633,8 +619,8 @@ button {
 /* ======= Footer .container  ======= */
 
 .footer {
-  padding-top: 56px; /* 21*3-24*3=3*3=9. 60+60-(56+55)=9. 9=5+4 раскидал на верхний и нижний паддинг. Из-за ошибки дизайнера Костыль 1 - уменьшить паддинги с 60*/
-  padding-bottom: 55px; /*  Из-за ошибки дизайнера Костыль 1 - уменьшить паддинги с 60*/
+  padding-top: 56px;
+  padding-bottom: 55px;
 }
 
 .footer-logo {
@@ -653,7 +639,6 @@ button {
 .address-list {
   display: flex;
   flex-direction: column;
-  /* height: 81px; Костыль 2 для исправления ошибки дизайнера макета*/
 }
 
 .address-list .items:not(:last-child) {
@@ -806,10 +791,10 @@ button {
   border-radius: 4px;
   box-shadow: none;
 
-  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-radius 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -828,6 +813,9 @@ button {
   text-decoration: inherit;
 
   display: block;
+
+  box-shadow: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
@@ -840,15 +828,15 @@ button {
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: calc(-1 * var(--card-set-gap)); /* НОВОЕ*/
-  margin-left: calc(-1 * var(--card-set-gap)); /* НОВОЕ*/
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 
 .portfolio-list-item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap)); /* НОВОЕ*/
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
 
-  margin-left: var(--card-set-gap); /* НОВОЕ*/
-  margin-top: var(--card-set-gap); /* НОВОЕ*/
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 .portfolio-card-box {
