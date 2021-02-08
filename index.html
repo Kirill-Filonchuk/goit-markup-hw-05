@@ -57,7 +57,7 @@
         <section class="hero overlay">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
             </div>
         </section>
         
@@ -393,5 +393,21 @@
             
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+
+        <div class="modal">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum magni nam fugiat ad obcaecati, maiores qui omnis veniam architecto voluptatibus voluptatem, at sit et explicabo ducimus ratione placeat corrupti autem.</p>
+
+            <button data-modal-close type="button" class="modal-button">
+<svg class="modal-button-icon" width="11px" height="11px">
+    <!-- <use href="./images/sprite.svg#close-black-18dp"></use> -->
+    <use href="./images/sprite.svg#close-vector"></use>
+</svg>
+            </button>
+        </div>
+
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
